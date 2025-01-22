@@ -1,0 +1,17 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A chat application using the MERN stack and Socket.io",
+  "scripts": {
+    "init-project": "npm install concurrently -D && npm run install-deps",
+    "install-deps": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "start-project": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm install && node app.js"
+  },
+  "author": "Aman Makhija",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
